@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>    
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Damir Drempetić">
+        <meta name="keywords" content="FOI, WebDiP, Projekt2016, ljekarna">
+        <meta name="description" content="Projekt ljekarna">
+        <link rel="stylesheet" href="css/damdrempe.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="css/damdrempe_print.css" type="text/css" media="print"><!--
+        <link rel="stylesheet" href="css/damdrempe_mobiteli.css" type="text/css" media="screen">-->
+    </head>
+
+    <body>
+        <header id="zaglavlje">
+            <a class="naslov" href="index.php">Ljekarna</a><br>
+            <a class="opis">WebDiP projekt 2016</a>
+        </header>
+
+        <nav>
+            <ul id="navigacija">
+                <li class="lijevo"><a href="izbornik.php">Izbornik</a></li>
+                <li class="lijevo"><a class="aktivan" href="dokumentacija.html">Dokumentacija</a></li>                
+                <li class="lijevo"><a href="o_autoru.html">O autoru</a></li>
+                <li class="desno"><a href="registracija.php">Registracija</a></li>
+                <li class="desno"><a href="prijava.php">Prijava</a></li>
+            </ul>
+        </nav>
+
+        <section id="sadrzaj">
+            <h1 class="centriraj">Opis projektnog zadatka</h1>
+            <p>Zadatak ovog projekta bio je izraditi sustav za upravljanje virtualnom ljekarnom i njezinim korisnicima. 
+                Sustavu može pristupiti neregistrirani korisnik koji tada ima ograničene mogućnosti korištenja sustava. Jednom
+                Kada se registrira dodjeljuje mu se uloga običnog registriranog korisnika, moderatora ili administratora. Svaka uloga predstavlja
+                ograničenja korištenja sustava za korisnika. Koristeći tehnologije, programske jezike, principe i metode naučene na kolegiju Web dizajn i programiranje bilo je potrebno realizirati
+                projektni zadatak sukladno specifikacijama. Specifikacije su zadane od strane nastavnika na kolegiju. Funkcionalnosti su propisane općim uputama projekta za sve teme
+                projektnog zadatka te specijaliziranim uputama za svaku temu projektnog zadatka.</p>
+            <h1 class="centriraj">Opis projektnog rješenja</h1>
+            <p>Rješenje predstavljaju određene mogućnosti korisnika prema njihovim ulogama. Neregistrirani korisnik može samo pregledavati određene lijekove i kategorije lijekova.
+                Zato, registrirani korisnik ima pravo rezervirati lijekove, pregledavati račune koje je zaprimio i slično. Moderator može uređivati lijekove i kategorije kao i akcije za lijekove. Naposljetku, administrator ima sva prava kao što su
+                kreiranja kategorija ljekova ili adresa poslovnica ljekarne ali i upravlja sustavom na način da može dodjeljivati uloge, 
+                blokirati korisnike ili upravljati vremenom sustva i slično.</p>
+            <h1 class="centriraj">Bitne odrednice projektnog rješenja (ERA model)</h1>
+            <figure class="centriraj">
+                <a href="img/era.png" target="_blank"><img src="img/era.png" alt="era" width="200" height="200"></a>
+                <figcaption>ERA dijagram</figcaption>
+            </figure>  
+            <h1 class="centriraj">Popis i opis skripata te datoteka</h1>
+            <h3>Baza</h3>
+            <p>baza/baza.class.php - klasa za rad s bazom podataka koju koristimo na kolegiju</p>
+            <p>baza_funkcije.php - skripta s funkcijama za rad s bazom u projektu, sadrži funkcije provjeri_postoji($fupit), unos_baza($fupit), 
+                vrati redak($fupit), vrati_retke($fupit), vvrijeme(), dohvati_vvpomak()</p>
+            <h3>CSS</h3>
+            <p>damdrempe.css - datoteka stilskog uređenja svih stranica</p>
+            <p>damdrempe_print.css - datoteka stilskog uređenja svih stranica za ispis na pisač</p>
+            <h3>JS</h3>
+            <p>registracija.js - validacija korisničkog unosa na klijentskoj strani prilikom popunjavanja obrasca za registraciju</p>
+            <h3>Privatno</h3>
+            <p>.htaccess - datoteka za autorizaciju</p>
+            <p>korisnici.php - datoteka za ispis svih korisnika i njihovih podataka</p>
+            <p>korisnici.txt - datoteka s korisnicima za autorizaciju pomoću .htaccess</p>
+            <h3>HTML</h3>
+            <p>dokumentacija.html - dokumentacija projektnog zadatka</p>
+            <p>o_autoru.html - o autoru projektnog zadatka</p>
+            <h3>PHP skripte</h3>
+            <p>index.php - početna stranica sustava</p>
+            <p>izbornik.php - stranica s prikazom svih mogućnosti ovisno o ulozi korisnika</p>
+            <p>lokacije_mapa.php - pregled lokacija poslovnica na mapi za registriranog korisnika</p>
+            <p>pregledavanje_racuna.php - pregled vlastitih dosad zaprimljenih racuna</p>
+            <p>definiranje_lijekova.php (definiraj_lijek.php)- dodavanje lijekova za kategorije od strane moderatora, prikazuje se ispis lijekova i kategorija kojima pripadaju te dostupne kategorije za moderiranje</p>
+            <p>kreiranje_akcija.php (kreiraj_akciju.php) - kreiranje akcija koje mogu biti dodjeljene lijekovima, prikazuju se također sve akcije koje postoje</p>
+            <p>dodjela_akcija.php (dodjeli_akciju.php) - dodjeljivanje akcija lijekovima, tj. snižavanje cijene lijekova, prikazuju se svi lijekovi na akciji s novim cijenama </p>
+            <p>virtualno_vrijeme.php - dohvaća pomak vremena pomoću jsona i zapisuje ga u bazu podataka</p>
+            <p>blokiranje.php (blokiraj.php, odblokiraj.php, promijeni_ulogu.php) - blokiranje i odblokiravanje korisničkog računa ali i promjena uloga kroisnicima</p>
+            <p>definiranje_lokacija.php (definiraj_lok.php) - dodavanje lokacija poslovnica ljekarne</p>
+            <p>kreiranje_kategorija.php (kreiraj_kat.php) - kreiranje kategorija za lijekove, prikazuju se sve postojeće kategorije</p>
+            <p>dodjela_moderatora.php (dodjeli_mod.php) - povezivanje moderatora s kategorijama lijekova, prikazuju se moderatori koji su dodijeljeni pojedinim kategorijama</p>
+            <p>pregled_dnevnika.php - pregled dnevnika rada iz baze podataka</p>
+            <p>Uz svaku skriptu u zagradama su navedene pomoćne skripte koje služe uglavnom za rad s bazom podataka i nemaju druge posebne uloge</p>
+            <h1 class="centriraj">Navigacijski dijagram</h1>
+            <figure class="centriraj">
+                <a href="img/navigacijski.jpg" target="_blank"><img src="img/navigacijski.jpg" alt="navigacijski" width="200" height="200"></a>
+                <figcaption>Navigacijski dijagram</figcaption>
+            </figure>  
+            <h1 class="centriraj">Popis i opis korištenih tehnologija i alata</h1>
+            <p>Alat za izradu projekta: NetBeans IDE 8.1</p>
+            <p>Korištene tehnologije: HTML, CSS, PHP, Javascript, MySQL, JSON</p>
+            <p>Korišteni preglednici: Mozilla Firefox, Google Chrome</p>
+            <h1 class="centriraj">Popis i opis vanjskih biblioteka</h1>
+            <p>https://www.google.com/recaptcha/api.js - biblioteka za uključivanje provjere kontrolnog niza znakova za sprječavanje automata</p>
+            <p>http://maps.googleapis.com/maps/api/js - biblioteka za prikaz Google mape s lokacijama iz baze podataka zapisanih pomoću koordinata</p> 
+            <p>http://barka.foi.hr/WebDiP/pomak_vremena/pomak.php?format=json - skripta za generiranje pomaka virtualnog vremena</p>
+        </section>
+
+
+        <footer id="podnozje">
+            <address><a href="mailto:damdrempe@foi.hr">KONTAKT: POŠALJI MAIL</a></address> 
+            <a>&copy; 2016 Damir Drempetić 41900/13-R</a>         
+        </footer>
+    </body>
+</html>

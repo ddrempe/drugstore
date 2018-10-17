@@ -1,0 +1,21 @@
+html{
+    background: white;
+    color: black;
+    font-size: 10px;
+}
+
+#zaglavlje{
+    display: none;
+}
+
+#podnozje{
+    display: none;
+}
+
+#navigacija{
+    display: none;
+}
+
+a{
+    color: black;
+}

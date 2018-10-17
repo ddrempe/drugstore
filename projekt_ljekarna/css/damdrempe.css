@@ -1,0 +1,197 @@
+html{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: WHITE;
+}
+
+body{
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+    height:100%;
+}
+
+#zaglavlje{
+    background-color: #0F5B95;
+    text-align: center;
+    color: WHITE;
+    text-transform: uppercase;
+}
+
+.naslov{
+    font-size: 60px;
+    text-decoration: none;
+    color:white;
+}
+
+.opis{
+    font-size: 27px;
+}
+
+#navigacija {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #04365C;
+}
+
+#navigacija li.lijevo {
+    float: left;
+}
+
+#navigacija li.desno {
+    float: right;
+}
+
+#navigacija li a {
+    display: block;
+    color: WHITE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#navigacija li a:hover {
+    background-color: WHITE;
+    color: #04365C;
+}
+
+.aktivan {
+    background-color: #0F5B95;
+}
+
+#podnozje { 
+    font-size: 12px;
+    background-color: #04365C;
+    text-align: center;
+    color: WHITE;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+}
+
+#podnozje a{
+    color: WHITE;
+}
+
+.ikona{
+    width: 64px;
+    height: 64px;
+}
+
+.ikona:hover{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#sadrzaj{
+    color: #04365C;
+    padding:10px;
+    padding-bottom: 100px;
+}
+
+#sadrzajforme{
+    margin: auto;
+    width: 20%;
+    padding: 30px;
+    align-content: center;
+}
+
+#sadrzajforme input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+input[type=submit] {
+    color: WHITE;
+    padding:5px 15px;
+    background:#04365C; 
+    border:0 none;
+    display: inline-block;
+}
+
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+}
+
+#greske{
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    text-align: left;
+}
+
+#jsgreske, #phpgreske{
+    clear: both;
+}
+
+#kontakt{
+    color:#04365C; 
+}
+
+.centriraj{
+    text-align: center;
+}
+
+th{
+    background-color: #04365C;
+    color: white;
+    padding:5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    padding:5px;
+}
+
+tr:hover{
+    background-color: #0F5B95;
+    color:white;
+}
+
+td{
+    padding:5px;
+}
+
+#htaccess{
+    display: block; 
+    background-color: #0F5B95;
+    text-decoration: none;
+    text-align: left;
+}
+
+#prijavljenkor{
+    border-top-color: #04365C;
+    border-top-style: solid;
+    display: block; 
+    background-color: #0F5B95;
+    color:white;
+    text-decoration: none;
+    text-align: right;
+    font-size: 12px;
+}
+
+.izborniklink{
+    text-decoration: none;
+    color: #0F5B95;
+    font-size: 18px;
+}
+
+#frmunosbaza{
+    width: 20%;
+    padding: 30px;
+}
+
+#frmunosbaza input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
